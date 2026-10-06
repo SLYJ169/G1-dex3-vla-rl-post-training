@@ -1,0 +1,5 @@
+stage,name,cumulative_success,total,rate,conditional_pass
+1,Lift,18,20,0.90,
+2,Align,15,20,0.75,15/18
+3,Insert,8,20,0.40,8/15
+4,Place,8,20,0.40,8/8

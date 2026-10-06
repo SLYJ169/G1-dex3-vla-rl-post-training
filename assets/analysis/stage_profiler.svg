@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="500" viewBox="0 0 920 500">
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#222}.title{font-size:27px;font-weight:700}.axis{font-size:16px}.label{font-size:18px;font-weight:700}.value{font-size:19px;font-weight:700}.grid{stroke:#ddd;stroke-width:1}.bar{fill:#4f81bd}</style>
+<rect width="920" height="500" fill="white"/>
+<text x="460" y="42" text-anchor="middle" class="title">Stage Profiler · V3 step10</text>
+<line x1="105" y1="410" x2="850" y2="410" stroke="#444" stroke-width="2"/>
+<line x1="105" y1="80" x2="105" y2="410" stroke="#444" stroke-width="2"/>
+<g>
+<line class="grid" x1="105" y1="344" x2="850" y2="344"/><text x="92" y="350" text-anchor="end" class="axis">20</text>
+<line class="grid" x1="105" y1="278" x2="850" y2="278"/><text x="92" y="284" text-anchor="end" class="axis">40</text>
+<line class="grid" x1="105" y1="212" x2="850" y2="212"/><text x="92" y="218" text-anchor="end" class="axis">60</text>
+<line class="grid" x1="105" y1="146" x2="850" y2="146"/><text x="92" y="152" text-anchor="end" class="axis">80</text>
+<line class="grid" x1="105" y1="80" x2="850" y2="80"/><text x="92" y="86" text-anchor="end" class="axis">100</text>
+</g>
+<rect class="bar" x="155" y="113" width="130" height="297" rx="6"/>
+<rect class="bar" x="335" y="162" width="130" height="248" rx="6"/>
+<rect class="bar" x="515" y="278" width="130" height="132" rx="6"/>
+<rect class="bar" x="695" y="278" width="130" height="132" rx="6"/>
+<text x="220" y="96" text-anchor="middle" class="value">18/20 · 90%</text>
+<text x="400" y="145" text-anchor="middle" class="value">15/20 · 75%</text>
+<text x="580" y="261" text-anchor="middle" class="value">8/20 · 40%</text>
+<text x="760" y="261" text-anchor="middle" class="value">8/20 · 40%</text>
+<text x="220" y="447" text-anchor="middle" class="label">Lift</text>
+<text x="400" y="447" text-anchor="middle" class="label">Align</text>
+<text x="580" y="447" text-anchor="middle" class="label">Insert</text>
+<text x="760" y="447" text-anchor="middle" class="label">Place</text>
+</svg>

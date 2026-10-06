@@ -1,0 +1,4 @@
+model,source,success,total,success_rate,mean_return,protocol
+Clean SFT,local baseline,35,100,0.35,2.580,Legacy100 10x10 local evaluation
+V5 step54,our PPO post-training,44,100,0.44,2.830,Legacy100 10x10 local evaluation
+Official RL checkpoint,reference checkpoint,80,100,0.80,4.350,Legacy100 10x10 local evaluation

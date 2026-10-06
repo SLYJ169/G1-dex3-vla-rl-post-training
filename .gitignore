@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Logs / checkpoints
+logs/
+checkpoints/
+outputs/
+runs/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Large media / simulation artifacts
+raw_media/
+*.avi
+*.usd
+*.usdc
+
+# OS / editors
+.DS_Store
+.vscode/
+.idea/

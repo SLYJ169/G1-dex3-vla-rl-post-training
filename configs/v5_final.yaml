@@ -1,0 +1,51 @@
+project: G1-Dex3-VLA-RL-PostTraining
+task: Isaac-Assemble-Trocar-G129-Dex3-Joint
+instruction: "install trocar from box"
+
+model:
+  base: GR00T-N1.5-3B_Assemble_Trocar
+  fine_tuning: full_parameter
+  framework: RLinf_PPO
+
+environment:
+  train_envs: 16
+  episode_length: 256
+  rollout_length: 256
+  success_stage: 4
+  reward: original_sparse_stage_rewards
+  use_fixed_reset_state_ids: true
+
+policy:
+  cameras: [front, left_wrist, right_wrist]
+  image_shape_hxw: [480, 640]
+  state_dim: 28
+  policy_action_dim: 28
+  scene_action_dim: 43
+  action_horizon: 16
+  num_action_chunks: 1
+
+ppo:
+  rollout_epochs: 8
+  update_epochs: 4
+  actor_lr: 5.0e-6
+  value_lr: 1.0e-4
+  gamma: 0.99
+  gae_lambda: 0.95
+  clip_ratio: 0.2
+  micro_batch_size: 64
+  global_batch_size: 1024
+  precision: bf16
+
+distributed:
+  fsdp: full_shard
+  actor_offload: false
+  rollout_offload: true
+
+training:
+  max_global_steps: 60
+  save_every_steps: 2
+  validation_during_training: false
+  trajectories_per_step: 128
+  total_trajectories: 7680
+  approx_environment_steps: 1966080
+  wall_time: "43:27:21"
